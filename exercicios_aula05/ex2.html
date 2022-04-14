@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Aula 5 - Exercício 2</title>
+		<style>
+			form {
+			text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="http://www.aula05.com/ex2.php" method="post">
+			<p>Usuário:
+				<input type="text" name="username" size="15" maxlength="30"/>
+			</p>
+			<p>Senha:
+				<input type="password" name="password" size="15" maxlength="30"/>
+			</p>
+			<p>Por que você está se increvendo neste curso?</p>
+			<textarea name="comments" cols="30" rows="4">Escreva aqui...</textarea>
+			<p>Selecione sua área de atuação:
+				<br>
+				<input type="radio" name="area" value="ti" checked="checked" /> TI
+				<input type="radio" name="area" value="financa" /> Finanças
+				<input type="radio" name="area" value="admin" /> Administração
+			</p>
+			<p>Por favor, selecione a(s) ferramenta(s) que você utiliza:
+				<br>
+				<input type="checkbox" name="tool" value="eclipse" checked="checked" /> Eclipse
+				<input type="checkbox" name="tool" value="delphi" /> Delphi
+				<input type="checkbox" name="tool" value="cbuilder" /> C++ Builder
+			</p>
+			<p>Há quanto tempo você trabalha?
+			<select name="work">
+				<option value="below">Menos de 1 ano</option>
+				<option value="between">De 1 a 5 anos</option>
+				<option value="over">Mais de 5 anos</option>
+			</select>
+			</p>
+			<p>
+				<label for="nivel_id">Nível escolar: </label>
+				<input type="text" name="nivel" id="nivel_id" list="niveis">
+				<datalist id="niveis">
+					<option value="Superior" label="Superior"></option>
+					<option value="Técnico" label="Técnico"></option>
+					<option value="Médio" label="Médio"></option>
+				</datalist>
+			</p>
+			<p>Instituição de ensino:</p>
+			<input type="search" name="search" placeholder="Enter" />
+			<input type="submit" value="Pesquisar" />
+			<p>Upload do Currículo:</p>
+			<input type="file" name="user-cv" /><br>
+			<input type="submit" name="upload" value="Upload" /><br><br>
+			<fieldset>
+				<legend>Dados pessoais</legend>
+				<label for="nome_id">Nome completo: </label><br>
+				<input type="text" name="nome" id="nome_id" placeholder="Digite o seu nome aqui" title="Mensagem Ajuda"><br>
+				<label for="username">Data de nascimento:</label><br>
+				<input type="date" name="data" /><br>
+				<label for="estado_id">Estado: <br></label>
+				<select name="estado" id="estado_id">
+					<optgroup label="Sudeste">
+						<option value="SP">São Paulo</option>
+						<option value="MG">Minas Gerais</option>
+						<option value="ES">Espírito Santo</option>
+						<option value="RJ">Rio de Janeiro</option>
+					</optgroup>
+					<optgroup label="Sul">
+						<option value="RS">Rio Grande do Sul</option>
+						<option value="SC">Santa Catarina</option>
+						<option value="PR">Paraná</option>
+					</optgroup>
+				</select>
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>Detalhes de contato</legend>
+				<label>Email:<br><input type="text" name="email"/></label><br>
+				<label>Celular:<br><input type="text" name="mobile"/></label><br>
+				<label>Telefone:<br><input type="text" name="telephone" /></label>
+			</fieldset>
+			<br>
+			<input type="submit" value="Enviar" />
+		</form>
+	</body>
+</html>

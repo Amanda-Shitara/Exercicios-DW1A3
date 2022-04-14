@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Aula 5 - Exercício 4</title>
+	</head>
+	<body>
+		<form action="http://www.aula05.com/ex4.php" method="post">
+
+			<fieldset>
+				<legend><strong>Identificação do Usuário</strong></legend>
+
+				<label for="nome">Nome*: </label>
+  				<input type="text" id="nome" name="Nome" size="30" maxlength="30" required><br>
+				
+				<label for="senha">Senha*: </label>
+  				<input type="password" id="senha" name="Senha" required><br>
+
+				<label for="cpf">CPF*: </label>
+  				<input type="text" id="cpf" name="CPF" required><br>
+
+				Sexo*:
+				<input id="male" type="radio" name="Genero" value="m" required>
+				<label for="male">Masculino</label>
+				<input id="female" type="radio" name="Genero" value="f">
+				<label for="female">Feminino</label><br>
+
+				<label for="data">Data de nascimento*: </label>
+				<input type="date" id="data" name="Data_Nasc" required><br>
+
+				Estado Civil*:
+				<input type="radio" id="solteiro" name="Estado_Civil" value="s" required>
+				<label for="solteiro">Solteiro(a)</label>
+				<input type="radio" id="casado" name="Estado_Civil" value="c">
+				<label for="casado">Casado(a)</label>
+				<input type="radio" id="divorciado" name="Estado_Civil" value="d">
+				<label for="divorciado">Divorciado(a)</label>
+				<input type="radio" id="viuvo" name="Estado_Civil" value="v">
+				<label for="viuvo">Viúvo(a)</label><br>
+
+				<label for="escola">Escolaridade: </label>
+				<select id="escola" name="Escolaridade">
+					<option value="fundIn">Fundamental Incompleto</option>
+					<option value="fundCom">Fundamental Completo</option>
+					<option value="medioIn">Médio Incompleto</option>
+					<option value="medioCom">Médio Completo</option>
+					<option value="supIn">Superior Incompleto</option>
+					<option value="supCom">Superior Completo</option>
+					<option value="mestrado">Mestrado</option>
+					<option value="doutorado">Doutorado</option>
+				</select><br>
+
+				<label for="occ">Ocupação Principal: </label>
+  				<input type="text" id="occ" name="Ocupacao"><br>
+				  
+				<label for="renda">Renda Mensal: </label>
+				<select id="renda" name="Renda">
+					<option value="renda1">Até 1 salário mínimo</option>
+					<option value="renda2">De 1 a 3 salários mínimos</option>
+					<option value="renda3">De 3 a 5 salários mínimos</option>
+					<option value="renda4">De 5 a 10 salários mínimos</option>
+					<option value="renda5">Mais de 10 salários mínimos</option>
+				</select><br>
+
+				<label for="dep">Número de Dependentes: </label>
+				<input type="text" id="dep" name="Dependentes"><br>
+
+				<label for="phone">Telefone*: </label>
+				<input type="text" id="phone" name="Phone" required><br>
+
+				<label for="email">Email*: </label>
+				<input type="email" id="email" name="Email" required><br>
+
+			</fieldset>
+
+			<fieldset>
+				<legend><strong>Localização</strong></legend>
+
+				<label for="estado">Estado*: </label>
+				<select id="estado" name="Estado" required>
+					<optgroup label="Norte">
+						<option value="AC">Acre</option>
+						<option value="AP">Amapá</option>
+						<option value="AM">Amazonas</option>
+						<option value="PA">Pará</option>
+						<option value="RO">Rondônia</option>
+						<option value="RR">Roraima</option>
+						<option value="TO">Tocantins</option>
+					</optgroup>
+					<optgroup label="Nordeste">
+						<option value="MA">Maranhão</option>
+						<option value="PI">Piauí</option>
+						<option value="CE">Ceará</option>
+						<option value="RN">Rio Grande do Norte</option>
+						<option value="PB">Paraíba</option>
+						<option value="PE">Pernambuco</option>
+						<option value="AL">Alagoas</option>
+						<option value="SE">Sergipe</option>
+						<option value="BA">Bahia</option>
+					</optgroup>
+					<optgroup label="Centro-Oeste">
+						<option value="GO">Goiás</option>
+						<option value="MT">Mato Grosso</option>
+						<option value="MS">Mato Grosso do Sul</option>
+						<option value="DF">Distrito Federal</option>
+					</optgroup>
+					<optgroup label="Sudeste">
+						<option value="SP">São Paulo</option>
+						<option value="MG">Minas Gerais</option>
+						<option value="ES">Espírito Santo</option>
+						<option value="RJ">Rio de Janeiro</option>
+					</optgroup>
+					<optgroup label="Sul">
+						<option value="RS">Rio Grande do Sul</option>
+						<option value="SC">Santa Catarina</option>
+						<option value="PR">Paraná</option>
+					</optgroup>
+				</select><br>
+
+				<label for="city">Cidade*: </label>
+				<input type="text" id="city" name="Cidade" size="30" maxlength="30" required>
+				
+			</fieldset>
+
+			<fieldset>
+				<legend><strong>Mensagem do Usuário</strong></legend>
+
+				Grau de Urgência:
+				<input id="grau1" type="radio" name="Grau_Urgencia" value="g1">
+				<label for="grau1">Muito Urgente</label>
+				<input id="grau2" type="radio" name="Grau_Urgencia" value="g2">
+				<label for="grau2">Urgente</label>
+				<input id="grau3" type="radio" name="Grau_Urgencia" value="g3">
+				<label for="grau3">Pouco Urgente</label><br>
+
+				<label for="comment">Mensagem*: </label><br>
+				<textarea id="comment" name="Mensagem" cols="50" rows="3" required>Escreva aqui...</textarea><br>
+
+				<label for="myfile">Reportar Erro: </label><br>
+				<input type="file" id="myfile" name="Arquivo"><br>
+				<input type="submit" value="Upload" />
+
+			</fieldset>
+			<br>
+
+			<input type="reset" value="Reset" style="background-color: red; color: white" />
+            <input type="submit" value="Submit" style="background-color: green; color: white" />
+
+		</form>
+	</body>
+</html>
