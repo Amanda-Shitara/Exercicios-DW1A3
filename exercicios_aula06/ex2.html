@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Aula 6 - Exercício 2</title>
+        <style>
+            body {
+              padding: 20px;
+              background: #f1f1f1;
+            }
+            header {
+              height: 130px;
+              line-height: 30px;
+              background: #e0e0e0;
+              color: #292929;
+              padding-top: 10px;
+            }
+            nav {
+              width: auto;
+              height: 30px;
+              float: right;
+              overflow: hidden;
+              background-color: #333;
+              position: relative;
+            }
+            nav a {
+              float: left;
+              display: block;
+              height: 30px;
+              color: #f2f2f2;
+              text-align: center;
+              padding-left: 14px;
+              padding-right: 16px;
+              text-decoration: none;
+              font-size: 17px;
+            }
+            nav a:hover {
+              background-color: #ddd;
+              color: black;
+            }
+            nav a.active {
+              background-color: #04AA6D;
+              color: white;
+            }
+            header hr {
+              border: none;
+              height: 5px;
+              background: #04AA6D;
+              width: 100%;
+              margin-bottom: 50px;
+            }
+            section {
+              display: block;
+              float: left;
+              align-self: top;
+              margin: 10px;
+            }
+            div#leftcolumn {
+              display: block;
+              float: left;
+              width: 70%;
+              margin: 10px;
+            }
+            aside {
+              display: block;
+              float: right;
+              align-self: top;
+              width: 25%;
+              padding-left: 10px;
+              margin: 10px;
+            }
+            footer {
+              display: table;
+              width: 100%;
+              padding: 5px;
+              background: #e0e0e0;
+              color: #292929;
+            }
+            footer a:link {
+              text-decoration: none;
+              color: black;
+            }
+            footer a:hover {
+              color: #04AA6D;
+            }
+            footer div {
+              display: table-cell;
+              width: 50%;
+              padding: 1em;
+              text-align: center;
+            }
+            footer div h2 {
+              text-align: center;
+            }
+            footer div:nth-of-type(2) {
+              border-left: 0.062em dotted #999;
+            }
+            aside, div#leftcolumn {
+              padding-top: 10px;
+              display:inline-block;
+              vertical-align: top;
+            }
+            article {
+              display: block;
+              float: left;
+              clear: both;
+              background-color: #f1f1f1;
+            }
+            aside input[type=text] {
+              padding: 6px;
+              margin-top: 8px;
+              font-size: 17px;
+              border: none;
+            }
+            div#search-container button {
+              float: right;
+              padding: 6px;
+              margin-top: 8px;
+              margin-right: 16px;
+              background: #ddd;
+              font-size: 17px;
+              border: none;
+              cursor: pointer;
+            }
+        </style>   
+    </head>
+    <body>
+        <header>
+            <h1 style="font-family: 'Brush Script MT', cursive; font-size: 50px; padding-left: 10px;">Traveler</h1>
+                <nav>
+                    <a class="active" href="#home">Home</a>
+                    <a href="#destino">Destinos</a>
+                    <a href="#sobre">Sobre nós</a>
+                    <a href="#contato">Contatos</a>
+                </nav><hr>
+        </header>
+        <div id="leftcolumn">
+            <section>
+                <h1 style="font-size: 1.8em;">Últimos Posts</h1><hr>
+                <article>
+                    <h2>Introdução a Kyoto, a antiga capital do Japão</h2>
+                    <p style="color: gray;">São Paulo, SP - 17/04/2019 - 13:50</p>
+                    Tendo servido como a capital do Japão por mais de mil anos, o nome "Kyoto" (escrito como 京都 em <i>kanji</i> japonês) 
+                    traduz literalmente como "capital". Hoje, a antiga capital é uma grande e moderna cidade com uma população de 
+                    mais de um milhão, mas em muitos aspectos ainda consegue manter a elegância e as tradições de seu passado.
+                    <figure>
+                      <img src="/kyoto.jpg" alt="Kyoto" style="width:100%">
+                      <figcaption style="text-align: center;">Kyoto, Japão.</figcaption>
+                    </figure>
+                    Kyoto é muitas vezes considerada a capital cultural do Japão. É conhecida por seus templos históricos, santuários 
+                    e palácios, bem como algumas paisagens incríveis e jardins. Enquanto Tóquio é uma metrópole moderna repleta de restaurantes 
+                    e vida noturna, Kyoto tem um ritmo um pouco mais relaxante e também é mais barato para os viajantes.
+                    <h2>Comentários</h2>
+                    <article>
+                      <strong>Ciclana Maria Santos</strong><br>20/02/2020 - 17:32<br>
+                      Pessoalmente, visitar Kyoto foi um dos destaques da nossa recente viagem. 
+                      Adorei como era diferente de Tóquio, dos belos templos e do sentimento de tradição. 
+                    </article>
+                    <article>
+                      <p><strong>Fulano Magalhães</strong><br>25/05/2019 - 14:55<br>
+                      Ano passado, realizei uma viagem a Kyoto e foi uma ótima experiência. 
+                      Visitei diversos pontos turísticos, como o templo Kiyomizu-dera e o Palácio Imperial, além de provar
+                      sua culinária tradicional.</p>
+                    </article>
+                </article>
+            </section>
+            <section>
+                <h1 style="font-size: 1.8em;">Posts em Destaque</h1><hr>
+                <article>
+                    <h2>10 cidades para visitar na Europa</h2>
+                    <p style="color: gray;">São Paulo, SP - 12/01/2019 - 15:15</p>
+                    Com toda a história, beleza e tradição que os países europeus tem a oferecer, 
+                    não é de se estranhar que seja difícil decidir quais os melhores locais a visitar na Europa.
+                    É por isso que a Traveler decidiu reunir 10 destinos para ajudá-lo a planejar sua próxima viagem.
+                </article>
+            </section>
+          </div>
+          <div id="right">
+            <aside>
+              <h1></h1>
+              <div id="search-container">
+                  <input type="text" placeholder="Search.." name="search">
+                  <button type="submit">Submit</button>
+              </div>
+              <h2>Posts mais acessados</h2>
+              <ul style="list-style-type:square;">
+                <li><a href="https://www.traveler.com.br/10-cidades-para-visitar-na-europa">10 cidades para visitar na Europa</a></li>
+                <li><a href="https://www.traveler.com.br/melhor-estacao-do-ano-para-viajar">Qual a melhor estação do ano para viajar?</a></li>
+                <li><a href="https://www.traveler.com.br/as-cidades-mais-seguras-do-mundo">Turismo: as cidades mais seguras do mundo</a></li>
+              </ul>
+              <h2>Reserve o seu hotel</h2>
+              <a href="https://travelereservas.com"><img src="logo.gif" style="width:100px;height:100px;"></a>
+            </aside>
+            <footer>
+              <div>
+                  <a href="/privacy">Privacy Policy</a><br>
+                  <a href="/terms">Terms of Service</a><br>
+                  <a href="/disclaimer">Disclaimer</a><br>
+                  <a href="/faq">FAQ</a>
+              </div>
+              <div>
+                <p style="font-size: 20px;">Redes sociais</p>
+                <a href="https://twitter.com"><img class="twitter" src="icons/twitter.png" alt="Twitter"></a>
+                <a href="https://www.facebook.com"><img class="fb" src="icons/facebook.png" alt="Facebook"></a>
+                <a href="https://instagram.com"><img class="insta" src="icons/insta.png" alt="Instagram"></a>         
+              </div>
+
+            </footer>
+          </div>
+        
+    </body>
+</html>
