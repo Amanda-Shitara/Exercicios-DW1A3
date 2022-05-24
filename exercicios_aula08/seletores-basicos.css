@@ -1,0 +1,31 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: #ddd;
+}
+#conteudo {
+    width: 800px;
+    background-color: lightgray;
+    border-color: black;
+    border-style: double;
+}
+.cancelado {
+    text-decoration: line-through;
+}
+ul {
+    padding: 0 0 0 40px;
+}
+li {
+    color: blue;
+}
+ul > li, #conteudo > ul {
+    margin: 0 0 20px 0;
+}
+ul + p {
+    color: red;
+}
+#conteudo p:nth-child(1) {
+    font-style: italic;
+}

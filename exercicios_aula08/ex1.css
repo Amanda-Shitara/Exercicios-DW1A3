@@ -1,0 +1,12 @@
+h4 {
+    font-weight: bold;
+}
+div p + p {
+    color: blue;
+}
+div p + h4 {
+    color: red;
+}
+p + h4 {
+    color: red;
+}
