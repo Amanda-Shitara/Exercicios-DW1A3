@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <script src="calculadora.js"></script>
+        <link rel="stylesheet" href="calculadora.css">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td colspan="4"><input type="text" id="display"/></td>
+                <td><input type="button" value="AC" id="ac" onclick="clr()"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="9" id="num" onclick="insert('9')"/></td>
+                <td><input type="button" value="8" id="num" onclick="insert('8')"/></td>
+                <td><input type="button" value="7" id="num" onclick="insert('7')"/></td>
+                <td><input type="button" value="/" id="op" onclick="insert('/')"/></td>
+                <td><input type="button" value="%" id="op" onclick="insert('%')"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="6" id="num" onclick="insert('6')"/></td>
+                <td><input type="button" value="5" id="num" onclick="insert('5')"/></td>
+                <td><input type="button" value="4" id="num" onclick="insert('4')"/></td>
+                <td><input type="button" value="-" id="op" onclick="insert('-')"/></td>
+                <td><input type="button" value="x^y" id="op" onclick="insert('^')"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="3" id="num" onclick="insert('3')"/></td>
+                <td><input type="button" value="2" id="num" onclick="insert('2')"/></td>
+                <td><input type="button" value="1" id="num" onclick="insert('1')"/></td>
+                <td><input type="button" value="*" id="op" onclick="insert('*')"/></td>
+                <td><input type="button" value="!" id="op" onclick="insert('!')"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="0" id="num" onclick="insert('0')"/></td>
+                <td><input type="button" value="." id="num" onclick="insert('.')"/></td>
+                <td><input type="button" value="=" id="num" onclick="solve()"/></td>
+                <td><input type="button" value="/" id="op" onclick="insert('/')"/></td>
+                <td><input type="button" value="+" id="op" onclick="insert('+')"/></td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+table
+{
+    background-color: #fefffb;
+    border-spacing: 10px;
+    border-radius: 5px;
+    border: 1px groove;
+}
+#num, #ac
+{
+    background-color: #f5f9e2;
+}
+#op
+{
+    background-color: #dce1c5;
+}
+input[type="button"]
+{
+    color: black;
+    font-size: 16px;
+    border-style: none;
+    width: 100%;
+}
+input[type="text"]
+{
+    background-color:#808080;
+    outline: solid #60605e;
+    color: white;
+    font-size: 16px;
+    border-style: none;
+}
